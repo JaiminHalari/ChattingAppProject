@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.StatusFragment"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="?selectableItemBackground">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/circular_status_view"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            app:portion_color="@color/colorAccent"
+            app:portion_spacing="4dp"
+            app:portion_width="4dp"
+            app:portions_count="15"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/username4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profile4"
+            app:layout_constraintTop_toTopOf="@+id/profile4"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/lastMsg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to chat"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/username4"
+            app:layout_constraintTop_toBottomOf="@+id/username4" />
+
+        <View
+            android:id="@+id/view44"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#E4E4E4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="?selectableItemBackground">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/circular_status_view5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            app:portion_color="@color/colorAccent"
+            app:portion_spacing="4dp"
+            app:portion_width="4dp"
+            app:portions_count="15"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/username5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profile5"
+            app:layout_constraintTop_toTopOf="@+id/profile5"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/lastMsg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to chat"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/username5"
+            app:layout_constraintTop_toBottomOf="@+id/username5" />
+
+        <View
+            android:id="@+id/view45"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#E4E4E4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
